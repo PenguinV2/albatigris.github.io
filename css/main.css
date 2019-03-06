@@ -1,0 +1,579 @@
+
+/* general settings */
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* sidebar settings */
+/* wrapper en dıştaki div 
+display: flex diğer elementelere göre konumunu ayarlayabilelim
+width: genişlik bütün wrapper ın genişliği kadar olsun
+wrapper daki itemler stretch olarak yayılsın*/
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+/* side bar kenar taraftakileri ayarlamak için id, min width max-width her durumda side bar genişliği 250px olsun demek, transition sidebar ın hareketinin zamana yayıyor, burada 0.3 saniyede (sidebar hareket ederse eğer) hareketini tamamlayacak, yani sak sak değil*/
+#sidebar {
+    min-width: 50px;
+    max-width: 50px;
+    background-color: #111111;
+    color: #fff;
+    transition: all .3s;
+}
+
+/* bunun amacı ekrana koyduğumuz butona tıklandığında sidebar'ı sol tarafa yani eksi kısma -250 px lik kaydıracak yani - olduğundan biz onu görmeyeceğiz, butona bu özelliği kazandırmak için javascript kodu yazmamız lazım, onuda html de en altta script etiketi açıp içine yazacağız
+        $(document).ready(function(){
+            $('#sidebarCollapse').on('click', function(){
+                $('#sidebar').toggleClass('active');
+            });
+        });
+        yazdığımız kod bu, bunun yaptığı şey, sidebarCollapse id sine sahip butona clicklediğimizde hemen aşağıda tanımladığımız active classını ekliyor veya zaten eklendiyse bu active class ını kaldırıyor, active class ı nın görevi ise butun sidebar'ı -250px sola kaydırmak veya geri getirmek
+        */
+#sidebar.active {
+    margin-left: -50px;    
+    
+    
+}
+
+.navbar-brand {
+    width: 100%;
+    /* navbar-brand classına sahip element %100'ünü kapsasın, yani sidebar ın 100% ünü kapsasın demek*/
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    /* text-align: center; */
+    /*burada navbar-brand clasının sahip olduğu logo yu sidebarda ortalamak için öncelikle default durumda olan margin ve paddingleri 0 lıyoruz
+    sonra ister buraya text-align ile center yapıyoruz, istersekte bootstrap ın text-center class ını kullanıyoruz ve py-3 diyoruz mesela bu padding demek y y ekseni demek bootstrap spacing diye google a yazınca ...*/
+}
+
+.navbar {
+    padding: 0;
+}
+
+.main-menu {
+    width: 100%;
+}
+
+.main-menu .nav-item {
+    text-align: right;
+    border-bottom: 1px solid #293034;
+}
+
+.main-menu .nav-item a {
+    background-color: #31383c;
+    color: #fff;
+    font-weight: 300;
+}
+
+.main-menu .nav-item a:hover {
+    background-color: #2db8b7;
+    transition: .4s;
+}
+
+.sidebar-heading {
+    width: 100%;
+    text-align: right;
+    padding-right: 15px; 
+}
+
+.sidebar-heading span {
+    font-size: 16px;
+    font-weight: 100;
+    padding-right: 5px;
+    line-height: 16px;
+    vertical-align: bottom;
+    /* span kısmı filter in yanındaki resim ile ilgli, burada line height: satır yüksekliği veriyor vertical align ise dikey hizalama demek, burada bottomdan hizala diyoruz, satır yüksekliğinide font size ile aynı yapınca 16 px yani .... hem yazı hem resim aynı düzelme geldi aşağı yukarı; */
+}
+
+.works-menu {
+    width: 100%;
+
+}
+
+.works-menu .nav-item {
+    text-align: right;
+    padding: 0;
+}
+
+.works-menu .nav-item a {
+    color: #6b7072;
+    font-size:13px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.works-menu .nav-item a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    width: 100%;
+}
+
+.social-icons ul {
+    list-style-type: none;
+    padding-right: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #293034;
+}
+
+.social-icons li {
+    float: right;
+    margin-left: 5px;    
+}
+
+.copyright {
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+    color:#9ae6c9;
+}
+
+/* page content */
+
+#content {
+    width: 100%;      
+}
+
+.btn-info {
+    border-radius: 0;
+    background-color: #111111;
+    position: fixed;
+    /* bu butonun hepr zaman burada olmasını istiyoruz sadece bunu dediğimizde buton resmin altına geçer görünmez olur, bunu üste getirmek için z-index kullanılır buraya 0 dan büyük bir değer verdiğimizde üste gelir, mesela 5 */
+    z-index: 5;
+    opacity: .7;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    /* position absolute dediğimizde beli bir nokta belirlenebilir hale gelir, top, bottom, left, right hepsine 0 dediğimizde overlay in içinde olduğu dive göre pozisyonu belirlenir, burada overlay classına ait element content divinin sol üstünne gelir*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left : 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #2db8b7;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.overlay-container:hover .overlay {
+ /* overlay-container classına hover olduğundan overlay class ını çalıştır demek, normalde overlay overlay-container içindeki resmin altında kalıyor, opacity si 0 olduğundan görünmüyor, ancak burada overlay-container hover olduğunda overlay i çalıştır dediğimizde opacity i değiştiriyor, 0.7 yapıyor ve alttaki görünür hale geliyor 
+ şimdi bu çalıştığından kenarlara falan taşmalar var, bu bootstrap'ın kendi koyduğu margin padding değerlerinden kaynaklı, buna gutter deniyor, bunun için no-gutter kodlarını kullanmamız gerekli, en yukarıya general settings kısmına koyduğum kod kullanıldığında bütün gutterlar 0 lanır */ 
+    opacity: .7;    
+}
+
+.text {
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 
+    burada top ve left 50% dediğimizde bizim text class lı elementimizin başlangıcı text'in parent ı olan overlay ın tam orta noktasından başlar, ancak bizim istediğimiz text lelementinin sol üstünün ortalanması değil, tamamının ortalanması, bunun için 
+    transform: translate (-50%, -50%) kullanılır, bu text i parentının içine ortalar */
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-border {
+    width: 50%;
+    /* border: 1px solid #fff; */
+    border: 1px solid red;
+    margin: 0 auto;
+    opacity: .7;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.project-area {
+    font-size : 20px;
+    color: black;
+}
+
+.btn-info2 {
+    border-radius:0;
+    background-color: #1ab5b3;
+    position: fixed;
+    /* sayfa hareket etsede bu sabit bir şekilde ayarladığımız yerde duracak*/
+    top:0;
+    right: 0;
+    /* üst ve sağda olacak dayalı şekilde*/
+    opacity: .7;
+}
+
+.btn-info2 i {
+    color: #fff;
+}
+
+#sidebar2 {
+    min-width: 200px;
+    max-width: 200px;
+    background-color:rgba(0,0,0,.7);
+    padding: 10px;
+    position: fixed;
+    top: 36px;
+    right: -200px;
+    z-index: 10;
+    transition: all .3s;
+}
+
+#sidebar2.active {
+    right: 0px;
+}
+
+#sidebar2 .fas {
+    margin-right: 10px;
+}
+
+.info-text {
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+
+
+/* work page */
+
+.content-area-grey {
+    background-color: #b4b7b5;
+    padding: 20px;
+    
+}
+
+.content-area-white {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+.gutter { /*burada ortadaki çizginin solunda ve sağında padding var, onu 20px olarak yaptık ama bir değişiklik olmadı, bu durumda önce class ismini kontrol ederiz, orada sıkıntı yoksa demek ki bir başka css ifadesi bakın geliyor demektir, bu durumda !important ekleriz */
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* psd deki ortadaki hafifi çizgi için ilk col-md-6 ya yeni bir class ekleyip buna border-right vereceğiz */
+
+.border-r {
+    border-right: 1px solid #d7d7d7; 
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+   /*  burada başlıklara bir padding verdik bunu burada da verebiliriz veya bootstrap'ın py-2 özelliğinide kullanabliriz. py-2 2 birim padding verir y ekseninde */
+}
+
+
+
+.project-info-title i {
+    color: #1ab5b3;
+    padding: 10px;
+    border: 1px solid #1ab5b3;
+    border-radius: 20px; 
+    margin-right: 10px;
+}
+
+.project-tags ul {
+    list-style: none;
+}
+
+.project-tags ul li {
+    display: inline-block;
+    font-size: 11px;
+    color: #a3a3a3;
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s
+}
+.project-tags ul li:hover {
+    color: #fff;
+    background-color: #1ab5b3;
+}
+
+.project-gallery {
+    list-style: none;
+
+}
+
+.project-gallery ul li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s
+}
+
+.project-gallery ul li:hover {
+    opacity: .5;
+
+}
+
+.project-features {
+    font-size: 14px;
+    color: #a3a3a3;    
+}
+
+.project-features .fa-check
+ {
+     margin-right: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/* about page */
+
+.ourStaff {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.ourStaff img {
+    display: block;
+    width: 90%;
+    height: auto;
+}
+
+.ourStaffOverlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(41,180,178,.5);
+    cursor: pointer;
+    overflow: hidden;
+    width: 90%;
+    /* img ile tutarlı olsun diye %90 dedik*/
+    height: 0;
+    transition: .5s;
+}
+
+/* burada parent class ourStaff, bunun position u relative,
+şimdi ourStaffOverlay class ı ise yani bizim resmin içinde görünmesini istediğimiz yazıya ait olan class ın position u ise absolute, yani bu absolute diyor ki parent class ına göre kendimi absolute yapacağım, yani parentim nerede ise ben kendimi ona göre absolute yapacağım sol üstete yani */
+
+
+.ourStaff:hover .ourStaffOverlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.ourStaffText {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    /* kendisinin parent ı lan class a göre genişliği %100 olsun*/
+}
+
+.ourStaffText h5, .ourStaffText p {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.skillRow h4, .skillRow p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.progress {
+    margin-top: -10px;
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+
+.progress .bg-info {
+    background-color: #e2e2e2 !important;
+}
+
+.testimonialsArea {
+    background-color: #1ab4b2;
+}
+
+.testimonialsRow {
+    border: 1px solid #e2e2e2;
+}
+
+
+.testimonialsArea h4 {
+    line-height: 80px;
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.services-point {
+    margin-left: 15px;
+}
+
+/* blog page */
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.textcard {
+    background-color: #1ab4b2;
+    text-align: center;
+    color: #fff;
+}
+
+.textcard .card-link {
+    color: #fff;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.card-footer .card-link {
+    color: #9a9a9a;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 30px;
+    width: 30px;
+    background-color: red /*  #1ab4b2 */;
+    top: calc(50% - 15px);
+}
+
+
+/* services page */
+
+.comment-space {
+    width: 80px;
+    height: 80px;
+    /* sadece böyle yapınca iki div arasına 80px lik boşluk koyar, float: left ile o boşluğu sola koyar, akış satırdan devam eder. float kullanıldıktan sonra bir üst parenta clearfiz eklenir sebebi float sonraki gelenlerin yapısını bozar */
+    float: left;
+}
+
+.comment-border {
+    width: 50%;
+    height: 50%;
+    border-bottom: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    float: right;
+}
+
+
+
+/* services page content */
+
+.input-group .fa-user, .input-group .fa-envelope, .input-group .fa-link {
+    padding: 5px;
+    border: 1px solid #1ab4b2;
+    border-radius: 50%;
+    color: #1ab4b2;
+
+}
+
+.form-control {
+    border-radius: 0;
+    height: auto;
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.btn-contact {
+    background-color: #1ab4b2;
+    border: 1px solid #1ab4b2;
+    margin-top: 1rem;
+    height: 42px;
+
+}
+
+textarea.form-control {
+    height: 100px;
+}
+
+.btn-contact:hover {
+    background-color: #fff;
+}
+
+
+
+/* media queries */
+
+
+/* works sayfası için media query */
+
+/* @media (max-width:1200px) {
+
+} 
+byrada bootstrap ın media query sayfasındaki gibi sayfa genişliğine göre css dosyasında yazarak çözebiliriz veya col-md- şeklinde kullanımımızı değiştirebiliriz works.html de col-md-6 ifadesini col-lg-6 col-md-12 şeklinde değiştirdiğimizde 
+large ekranlarda satır 2 sütuna bölünür md olduğunda çözünürlük satır tek sütunda görünür
+*/
+
+
+@media (max-width:768px){
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    .related-P {
+        width: 80%;
+    }
+
+    .textCenter {
+        text-align: center;
+    }
+}
