@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+.col {
+    border: 1px solid black;
+    text-align: center;
+   /*  display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px; */
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+}

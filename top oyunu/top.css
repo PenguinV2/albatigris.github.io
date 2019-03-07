@@ -1,0 +1,5 @@
+body {
+    padding: 0; /* sayfada boşluk olmasın */
+    margin: 0; 
+    overflow: hidden; /* sayfanın altında üstünde tarayıcı çubukları olmasın */
+}

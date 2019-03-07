@@ -1,0 +1,160 @@
+/* body {
+    background: gray;
+} */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+    /* background: gray; */
+    width: 360px;
+    margin: 100px auto;
+    /* ortaya almanın kısa yolu, margin top ve bottom ı yükseklik ve bottom ı ayarlamak, sol ve sağ auto */
+    /* border: 2px solid gray; */
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    /* border: 5px solid black;
+    border-radius: 15px; */
+}
+
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul {
+    list-style: none; /* bullet ları yoketmek */
+    margin: 0;
+    padding: 0;
+}
+
+.must li {
+    background:white;
+    height: 40px;
+    line-height: 40px;
+    color: black; 
+}
+
+.must li:nth-child(2n){
+    background: lightgray;
+}
+
+
+
+.should li {
+    background:white;
+    height: 40px;
+    line-height: 40px;
+    color: black; 
+}
+
+.should li:nth-child(2n){
+    background: lightgray;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+.fa-plus {
+    float: right;
+    
+} 
+
+/* .fa-exclamation-triangle {
+    float: right;
+}
+
+.fa-calendar-alt {
+    float: right;
+} */
+
+.sil {
+    background: red;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    /* width: 40px; garbage ların sabit kalmasını istiyorsak bu şekilde olacak, yok hover ile animasyonlu vb. olmasını istiyorsak, width: 0px olacak, böylelikle görünmeyecek ama orada olacak*/
+    width: 0px;
+    display: inline-block;
+    transition: 0.3s linear;
+    opacity: 0;
+}
+
+.ciz {
+    background: green;
+    height: 40px;
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+    /* width: 40px; garbage ların sabit kalmasını istiyorsak bu şekilde olacak, yok hover ile animasyonlu vb. olmasını istiyorsak, width: 0px olacak, böylelikle görünmeyecek ama orada olacak*/
+    width: 0px;
+    display:inline-block/* inline-block */;
+    transition: 0.3s linear; 
+    opacity: 0;
+}
+
+.acil, .acil1 {
+    background: rgb(47, 62, 194);
+    height: 40px;
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+    /* width: 40px; garbage ların sabit kalmasını istiyorsak bu şekilde olacak, yok hover ile animasyonlu vb. olmasını istiyorsak, width: 0px olacak, böylelikle görünmeyecek ama orada olacak*/
+    width: 0px;
+    display:inline-block/* inline-block */;
+    transition: 0.3s linear; 
+    opacity: 0;
+}
+
+/* .takvim {
+    background: rgb(30, 156, 108);
+    height: 40px;
+    margin-left: 20px;
+    text-align: center;
+    color: white;
+    /* width: 40px; garbage ların sabit kalmasını istiyorsak bu şekilde olacak, yok hover ile animasyonlu vb. olmasını istiyorsak, width: 0px olacak, böylelikle görünmeyecek ama orada olacak
+    width: 0px;
+    display:inline-block;
+    transition: 0.3s linear; 
+    opacity: 0;
+}  */
+
+.m{
+    font-size: 18px;
+    background: whitesmoke;
+    /* color: rgb(170, 118, 118) */;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+    display: none;
+}
+
+.m:focus {
+    background:white;
+    border: 3px solid rgb(32, 124, 211);
+    outline: none;
+}
+.s{
+    font-size: 18px;
+    background: whitesmoke;
+    /* color: green; */
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+    display: none;
+}
+
+.s:focus {
+    background: white;
+    border: 3px solid rgb(32, 124, 211);
+    outline: none;
+}
