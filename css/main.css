@@ -75,8 +75,8 @@ wrapper daki itemler stretch olarak yayılsın*/
   }
 
 #sidebar {
-    min-width: 50px;
-    max-width: 50px;
+    min-width: 250px;
+    max-width: 250px;
     background-color: #111111;
     color: #fff;
     transition: all .3s;
@@ -91,7 +91,7 @@ wrapper daki itemler stretch olarak yayılsın*/
         yazdığımız kod bu, bunun yaptığı şey, sidebarCollapse id sine sahip butona clicklediğimizde hemen aşağıda tanımladığımız active classını ekliyor veya zaten eklendiyse bu active class ını kaldırıyor, active class ı nın görevi ise butun sidebar'ı -250px sola kaydırmak veya geri getirmek
         */
 #sidebar.active {
-    margin-left: -50px;    
+    margin-left: -250px;    
     
     
 }
