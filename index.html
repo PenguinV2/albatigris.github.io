@@ -1,4 +1,3 @@
-<!-- bootstrap starter template aldım-->
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,425 +5,457 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+     <!-- harici css dosyası -->
+     <link rel="stylesheet" type="text/css" href="style.css">
+<style>
 
-    <link rel="stylesheet" href="css/main.css">
+
+</style>
+    
 
     <title>   _♣_ k e m a l _♣_   </title>
   </head>
   <body>
+    <!-- burada 2 satır 3 sütun şeklinde düşündüm, nav için bir satır içerik için 2. satır şeklinde -->
+    <div class="container mt-5 mb-4">
+        <!-- <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="nav-filter" class="my-4">
 
-    <div class="wrapper">
-        <!-- sidebar -->
-        <!-- <div id="sidebar"> -->
-<!-- bootstraptaki navbar konusundaki kullandıkları class isimleri -->
-            <!-- <nav class="navbar"> -->
-                <!-- <a href="index.html" class="navbar-brand text-center py-3"><img src="/logo.PNG" class="logo" alt=""></a> -->
+                    <button class="btn btn-outline-danger mx-2" data-filter="*">hepsi</button>
+                    <button class="btn btn-outline-danger mx-2" data-filter=".web">web</button>
+                    <button class="btn btn-outline-danger mx-2" data-filter=".mob">mob</button>
+                    <button class="btn btn-outline-danger mx-2" data-filter=".print">print</button>
 
-                <!-- <ul class="main-menu">
-                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="work.html">WORK</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-                </ul> -->
-
-                <!-- <h6 class="sidebar-heading">
-                    <span>FILTER</span>
-                    <a href="index.html"><img class="filter-logo" src="filterlogo.PNG" alt=""></a>
-                </h6> -->
-               <!--  <ul class="works-menu">
-                        <li class="nav-item"><a class="nav-link" href="#">all works</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">web design</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">illustration</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">photopraghy</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">wallpapers</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">brochures</a></li>
-
-                </ul> -->
-                <!-- <div class="icon-bar">
-                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a> 
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> 
-                    <a href="#" class="google"><i class="fab fa-google"></i></a> 
-                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a> 
-                    <a href="#" class="youtube"><i class="fa
-                        r fa-envelope"></i></a> 
-                  </div> -->
-<!-- 
-                <div class="social-icons">
-                    <ul>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fab fa-instagram fa-2x"></i></a></li>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fab fa-github-square fa-2x"></i></a></li>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fab fa-whatsapp-square fa-2x"></i></a></li>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fab fa-pinterest-square fa-2x"></i></a></li>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fab fa-dribbble fa-2x"></i></a></li>
-                        <li class="social-icon"><a href="https://www.twitter.com"><i class="fas fa-envelope fa-2x"></i></a></li>
-                    </ul>
-                </div> -->
-
-                <!-- <p class="copyright">&#169; 2014 Kappe All Rights Reserved</p> -->
-
-            <!-- </nav> -->
-
-        <!-- </div> -->
-
-        <!-- Page Content -->
-        <div class="container">
-            <div id="content">
-            <div class="container-fluid">
-                <!-- <button id="sidebarCollapse" class="btn btn-info">&#x2630;</button> -->
-                <!-- <button id="sidebarCollapse" class="btn btn-info"><i class="far fa-question-circle fa-2x"></i></button> -->
-
-                <div class="row no-gutters">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                                <!-- burada bütün content alanını  tek satır olarak görüyoruz, bootstrapta toplam sütun sayısı 12 dir bizim psd mizde 4 sütun old. göre burada her sütun 3 lük olmalı, buarada psd de göründüğü şekilde 4 satır apsaydık tek satır yerine o zaman mesela 5. sütunu yazdığımızda 3 sütun genişliğinde o zaman 5. bir alta iner ortalık karışırdı  -->
-                                <div class="overlay-container">
-                                    <!-- overlay classı psd sayfasnın ortasına doğru bir icon tuş gibi bir şey var onun için -->
-                                    <a href="Hesap Makinesi/calculator.html">
-                                    <img src="resim/calculator.png" class="image img-fluid" alt="">
-                                    <div class="overlay">
-                                        <div class="text">
-                                            <h6 class="project-title"></h6>
-                                            <p class="project-area">klasik hesap makinesi <br> (basit, farksız)</p>
-                                            <div class="overlay-border"></div>
-                                            <!-- <img src="circle1.jpg" alt=""> -->
-                                            <div class="progress">
-                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">%90</div>
-                                            </div>
-                                            <p>( - ) kod review</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                            <!-- burada bütün content alanını  tek satır olarak görüyoruz, bootstrapta toplam sütun sayısı 12 dir bizim psd mizde 4 sütun old. göre burada her sütun 3 lük olmalı, buarada psd de göründüğü şekilde 4 satır apsaydık tek satır yerine o zaman mesela 5. sütunu yazdığımızda 3 sütun genişliğinde o zaman 5. bir alta iner ortalık karışırdı  -->
-                            <div class="overlay-container">
-                                <!-- overlay classı psd sayfasnın ortasına doğru bir icon tuş gibi bir şey var onun için -->
-                                <a href="To Do/index.html">
-                                <img src="resim/to_do.png" class="image img-fluid" alt="">
-                                <div class="overlay">
-                                    <div class="text">
-                                        <h6 class="project-title"></h6>
-                                        <p class="project-area">biraz farklı bir toDo app</p>
-                                        <div class="overlay-border"></div>
-                                        <!-- <img src="circle1.jpg" alt=""> -->
-                                        <div class="progress">
-                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">%50</div>
-                                        </div>
-                                        <p>( - ) dizayn, refactoring, senaryo</p>
-                                    </div>
-                                </div>
-                            </a>
-                            </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- burada bütün content alanını  tek satır olarak görüyoruz, bootstrapta toplam sütun sayısı 12 dir bizim psd mizde 4 sütun old. göre burada her sütun 3 lük olmalı,
-                        col-lg-3 col-md-4 col-sm-6 medium ve daha büyük cihazlarda ekranı 4 e böl demek 12/3=4 den, ilk halinde col-md-3 idi,
-                        şimdi   col-lg-3 col-md-4 col-sm-6 yaptık, bunun anlamı
-                        büyük ekranlarda ekranı 3'e böl yani 12/3 ekranda 4 tane column olacak
-                        solra col-md-4 demek medium ekranlarda ekranı 4 e böl yani 12/4=3 column olacak, col-sm-6 demek small ekranlarda ekranı 12/6=2 ye böl yani 2 column olsun
-                        demek
-                        buarada psd de göründüğü şekilde 4 satır apsaydık tek satır yerine o zaman mesela 5. sütunu yazdığımızda 3 sütun genişliğinde o zaman 5. bir alta iner ortalık karışırdı  -->
-                        <div class="overlay-container">
-                            <!-- overlay classı psd sayfasnın ortasına doğru bir icon tuş gibi bir şey var onun için -->
-                            <a href="snake game/kemal_snake.html">
-                            <img src="resim/snakeSC.png" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">biraz farklı bir yılan oyunu</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">%60</div>
-                                    </div>
-                                    <p>( - ) dizayn, refactoring, senaryo</p>
-                                </div>
-                            </div>
-                        </a>
+                </div>
+            </div>
+        </div> -->
+      
+        
+       
+        <div class="row" id="nav-content">
+            
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="Hesap Makinesi/calculator.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/calculator.png" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">basit bir hesap makinesi</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><b>% 85</b></div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <!-- burada bütün content alanını  tek satır olarak görüyoruz, bootstrapta toplam sütun sayısı 12 dir bizim psd mizde 4 sütun old. göre burada her sütun 3 lük olmalı, buarada psd de göründüğü şekilde 4 satır apsaydık tek satır yerine o zaman mesela 5. sütunu yazdığımızda 3 sütun genişliğinde o zaman 5. bir alta iner ortalık karışırdı  -->
-                        <div class="overlay-container">
-                            <!-- overlay classı psd sayfasnın ortasına doğru bir icon tuş gibi bir şey var onun için -->
-                            <a href="renkOyunu/renkOyunu.html">
-                            <img src="resim/renkOyunu.png" class="image img-fluid" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">rgb tabanlı renk <br> tahmin etme oyunu</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">%70</div>
-                                    </div>
-                                    <p>( - ) kod review, refactoring, dizayn, senaryo</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) refactoring</li>
+                            <br>
+                            <br>
+                            <!-- <li>(-) senaryo</li>
+                            <li>(-) dizayn</li> -->
+                        </ul>
                         
-                        <div class="overlay-container">
-                            <a href="galeri isotope/index.html">
-                            <img src="resim/isotope.jpg" class="image img fluid" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">isotope galeri örneği</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">%80</div>
-                                    </div>
-                                    <p>( - ) kod review, senaryo</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        
-                        <div class="overlay-container">
-                            <a href="memory game 2/index.html">
-                            <img src="resim/memory-game-icon.png" class="image img-fluid" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">klasik memory game</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">%50</div>
-                                    </div>                                <p>( - ) kod review, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="puzzle game/resmi parcalama/split.html">
-                            <img src="resim/puzzle.png" class="image img fluid" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">puzzle game</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">%15</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="top oyunu/index.html">
-                            <img src="resim/pingpong.jpg" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">klasik ping pong</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">%15</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="muuri/index.html">
-                            <img src="muuri/maxresdefault.jpg" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">sortable images</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">%40</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="tetris/index.html">
-                            <img src="resim/tetris.png" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">klasik tetris</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">%15</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="traffic racer/index.html">
-                            <img src="resim/trafficRacer.jpg" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">traffic racer</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">%15</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="pomodoro/index.html">
-                            <img src="resim/pomodoroClock.jpeg" class="image img-fluid" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">pomodoro clock</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">%15</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="multiple choices/index.html">
-                            <img src="resim/multipleChoices.jpeg" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">multiple choices</p>
-                                    <div class="overlay-border"></div>
-                                    <!-- <img src="circle1.jpg" alt=""> -->
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">%15</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <a href="survey/index.html">
-                            <img src="resim/survey.jpg" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">survey app</p>
-                                    <div class="overlay-border"></div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">%15</div>
-                                    </div>                                <p>( - ) kod yazılacak, senaryo, dizayn</p>
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container"> 
-                            <a href="design examples/index.html">
-                            <img src="resim/designer.png" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area">design exaples</p>
-                                    <div class="overlay-border"></div>
-                                    <img src="circle1.jpg" alt="">
-                                </div>
-                            </div>
-                        </a>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">
-                            <img src="resim/placeimg_408_311_any (14).jpg" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area"></p>
-                                    <div class="overlay-border"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!--  <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="overlay-container">                   
-                            <img src="resim/placeimg_408_311_any (15).jpg" class="image" alt="">
-                            <div class="overlay">
-                                <div class="text">
-                                    <h6 class="project-title"></h6>
-                                    <p class="project-area"></p>
-                                    <div class="overlay-border"></div>   
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                     <button id="sidebarCollapse2" class="btn btn-info2"><i class="fas fa-info-circle"></i></button>
-                    <div id="sidebar2">
-                        <p class="info-text"><i class="fas fa-phone"></i>0506 416 20 99</p>
-                        <p class="info-text"><i class="fas fa-envelope"></i>kbeler@outlook.com</p>
-                        <p class="info-text"><i class="fas fa-home"></i>Ankara / Türkiye</p>
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="To Do/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/to_do.png" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">iki sekmeli todo app</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><b>% 50</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) refactoring</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="snake game/kemal_snake.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/snakeSC.png" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">biraz değişik yılan oyunu</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><b>% 60</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) refactoring</li>
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="pong game/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/pingpong.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">klasik pong oyunu</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"><b>%15</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) kod yazılacak</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="galeri isotope/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/isotope.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">isotope galeri örneği</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><b>% 80</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) listeleme problemi</li>
+                            <li>(-) resim ekleme</li>
+                            <li>(-) refactoring</li>                  
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="renkOyunu/renkOyunu.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/renkOyunu.png" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">rgb renk tespit oyunu</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>% 75</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) refactoring</li>
+                            <li>(-) dizayn</li>
+                            <li></li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="puzzle game/resmi parcalama/split.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/puzzle.png" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">puzzle oyunu</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"><b>%10</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) kod yazılacak</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="memory game 2/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/memory-game-icon.png" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">hafıza oyunu</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><b>% 50</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) refactoring</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="tetris/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/tetris.png" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">tetris</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"><b>% 10</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) kod yazılacak</li>
+                            <li>(-) dizayn</li>
+                            <li></li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="muuri/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/maxresdefault.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">puzzle oyunu</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><b>% 60</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) refactoring</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="pomodoro/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/pomodoroClock.jpeg" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">pomodoro clock</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"><b>% 10</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) kod yazma</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="multiple choices/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/multipleChoices.jpeg" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">bilgi yarışması</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"><b>% 10</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo, sorular</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) kod yazma</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="traffic racer/index.html" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="resim/trafficRacer.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5></h5>
+                        <p class="card-text">trafikte yarış</p>
+                        <div class="progress" style="height: 25px">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"><b>% 10</b></div>
+                        </div>
+                        <br>
+                        <ul style="list-style:none">
+                            <!-- <h6 style="color:red;"><u>yapılacaklar</u></h6> -->
+                            <li>(-) senaryo</li>
+                            <li>(-) dizayn</li>
+                            <li>(-) kod yazma</li>
+                        </ul>
+                        
+                            <!-- <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul> -->
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="row">
+                <div class="col-md-12 text-center">                        
+                    <p><i class="fas fa-phone"></i>   0506 416 20 99 * * * <i class="fas fa-envelope"></i>   kbeler@outlook.com * * * <i class="fas fa-home"></i>   Ankara / Türkiye</p>                            
+                </div>
+            </div>
+
+
     </div>
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- isotope JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="js/index.js"></script>
 
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#sidebarCollapse').on('click', function(){
-                $('#sidebar').toggleClass('active');
-            });
-        });
-        $(document).ready(function(){
+    <script>
+    $(document).ready(function(){
             $('#sidebarCollapse2').on('click', function(){
                 $('#sidebar2').toggleClass('active');
             });
         });
     </script>
-
+    
   </body>
 </html>
