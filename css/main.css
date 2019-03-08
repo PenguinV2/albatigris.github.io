@@ -13,7 +13,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 /* sidebar settings */
@@ -25,7 +25,7 @@ wrapper daki itemler stretch olarak yayılsın*/
 .wrapper {
     display: flex;
     width: 100%;
-    align-items: stretch;
+    align-items: stretch;    
 }
 /* side bar kenar taraftakileri ayarlamak için id, min width max-width her durumda side bar genişliği 250px olsun demek, transition sidebar ın hareketinin zamana yayıyor, burada 0.3 saniyede (sidebar hareket ederse eğer) hareketini tamamlayacak, yani sak sak değil*/
 
@@ -272,7 +272,7 @@ wrapper daki itemler stretch olarak yayılsın*/
 
 .btn-info2 {
     border-radius:0;
-    background-color: #1ab5b3;
+    background-color: #d9534f;
     position: fixed;
     /* sayfa hareket etsede bu sabit bir şekilde ayarladığımız yerde duracak*/
     top:0;
@@ -307,7 +307,9 @@ wrapper daki itemler stretch olarak yayılsın*/
 
 .info-text {
     color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 

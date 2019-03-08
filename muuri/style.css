@@ -1,0 +1,34 @@
+.grid {
+    position: relative;
+  }
+  .item {
+    display: block;
+    position: absolute;
+   /*  width: 150px;
+    height: 150px; */
+    margin: 5px;
+    z-index: 1;
+    background: #000;
+    color: #fff;
+  }
+  .item.muuri-item-dragging {
+    z-index: 3;
+  }
+  .item.muuri-item-releasing {
+    z-index: 2;
+  }
+  .item.muuri-item-hidden {
+    z-index: 0;
+  }
+  .item-content {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .item.muuri-item-dragging img {
+      opacity: 0.5;
+      /* border: 2px solid red; */
+  }
