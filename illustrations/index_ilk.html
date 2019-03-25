@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+     <!-- harici css dosyası -->
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>GALLERY EXAMPLE</title>
+  </head>
+  <body>
+    <!-- burada 2 satır 3 sütun şeklinde düşündüm, nav için bir satır içerik için 2. satır şeklinde -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="nav-filter" class="my-4">
+<!-- my-4 bootstrapta margin vermek için bu y ekseninde yani hem top hem bottom olarak 4 boşluk ver demek, mt-4 olsaydı sadece üstten 4 olurdu; mx-2 ise x ekseninde aynı işi yapar hem sol hem sağ yani --> 
+                    <button class="btn btn-outline-danger mx-2" data-filter="*">hepsi</button>
+                    <button class="btn btn-outline-danger mx-2" data-filter=".web">web</button>
+                    <button class="btn btn-outline-danger mx-2" data-filter=".mob">mob</button>
+                    <button class="btn btn-outline-danger mx-2" data-filter=".print">print</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="row" id="nav-content">
+            
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                <div class="card mb-4 shadow-sm">
+                    <a href="img/placeimg_640_480_any.jpg" data-gallery="web-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                        <img src="img/placeimg_640_480_any.jpg" class="card-img-top" alt="xxx">
+                    </a>
+                    <div class="card-body">
+                        <h5>baslik</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                            <ul class="social-list">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12 mob">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (1).jpg" data-gallery="mob-gallery" data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (1).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 print">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (2).jpg" data-gallery="print-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (2).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 print">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (3).jpg" data-gallery="print-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (3).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 mob">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (4).jpg" data-gallery="mob-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (4).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (5).jpg" data-gallery="web-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (5).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 mob">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (6).jpg" data-gallery="mob-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (6).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 print">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (7).jpg" data-gallery="print-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (7).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (8).jpg" data-gallery="web-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (8).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 mob">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (9).jpg" data-gallery="mob-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (9).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 print">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (10).jpg" data-gallery="print-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (10).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 web">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (11).jpg" data-gallery="web-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (11).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 mob">
+                    <!-- burada col sütun demek, col-md-4 demek medium cihazlarda ekrandaki 4 parçadan bir sütun yap demek, bootstrapta ekranda 12 sütun olduğundan bu ekrana 3 sütun yap demek medium cihazlarda; sm small cihazlarda 6/12 den ekrana 2 sütun yap demek, xs-12 ise xs cihazlarda ekranın tamamı sütun olsun demek -->
+                    <div class="card mb-4 shadow-sm">
+                        <a href="img/placeimg_640_480_any (12).jpg" data-gallery="mob-gallery"  data-toggle="lightbox" data-title="" data-footer="">
+                            <img src="img/placeimg_640_480_any (12).jpg" class="card-img-top" alt="xxx">
+                        </a>
+                        <div class="card-body">
+                            <h5>baslik</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quis a illum veniam dolorum quas id nam blanditiis, laudantium temporibus.</p>
+                                <ul class="social-list">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+               
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- isotope JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="js/index.js"></script>
+    
+  </body>
+</html>

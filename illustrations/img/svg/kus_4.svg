@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="katman_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.89 595.28" style="enable-background:new 0 0 841.89 595.28;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#BE1622;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#009FE3;}
+	.st3{fill:#009640;}
+	.st4{fill:#95C11F;}
+	.st5{fill:#F39200;}
+	.st6{fill:#A3195B;}
+	.st7{fill:none;stroke:#000000;stroke-width:0.8752;stroke-miterlimit:10;}
+</style>
+<path d="M515.85,355.47H392.67c-30.63,0-55.46-24.83-55.46-55.46v-35.9h87.28C474.94,264.11,515.85,305.01,515.85,355.47
+	L515.85,355.47z"/>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M511.13,248.07H337.21v-26.18c0-19.89,16.13-36.02,36.02-36.02h75.7
+			C483.28,185.88,511.13,213.72,511.13,248.07L511.13,248.07z"/>
+	</defs>
+	<use xlink:href="#SVGID_1_"  style="overflow:visible;fill:#F39200;"/>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<ellipse class="st0" cx="502.15" cy="221.45" rx="42.93" ry="50.41"/>
+</g>
+<path d="M408.66,354.16h-27.19c-24.45,0-44.27-19.82-44.27-44.27v-95.81c0-15.59,12.64-28.23,28.23-28.23h15
+	c15.59,0,28.23,12.64,28.23,28.23V354.16z"/>
+<ellipse class="st1" cx="369.91" cy="219" rx="17.52" ry="18.07"/>
+<ellipse class="st2" cx="370.6" cy="219.85" rx="11.29" ry="9.48"/>
+<ellipse cx="370.6" cy="219.85" rx="7" ry="5.88"/>
+<path class="st3" d="M486.11,338.31h-34.57c-31.5,0-57.03-25.53-57.03-57.03v0h148.64v0C543.14,312.77,517.61,338.31,486.11,338.31z
+	"/>
+<path class="st4" d="M486.28,322.03h-17.86c-20.71,0-37.5-16.79-37.5-37.5v-3.25h85.1v11.02
+	C516.01,308.72,502.7,322.03,486.28,322.03z"/>
+<rect x="418.78" y="355.47" class="st5" width="9.44" height="43.59"/>
+<rect x="450.12" y="355.47" class="st5" width="9.44" height="43.59"/>
+<path class="st6" d="M586.83,421.9h-331.4c-9.19,0-16.64-7.45-16.64-16.64v0c0-9.19,7.45-16.64,16.64-16.64h331.4
+	c9.19,0,16.64,7.45,16.64,16.64v0C603.48,414.44,596.03,421.9,586.83,421.9z"/>
+<path class="st7" d="M512.65,247.83H408.66v-27.41h78.17c14.26,0,24.3,13.85,24.3,27.65L512.65,247.83z"/>
+</svg>
