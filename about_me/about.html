@@ -1,11 +1,478 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hakkımda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" type="text/css" href="about.css"> -->
+
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+
+    ul {
+      padding-left: 0px;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    .social-list li {
+      display: inline-block;
+      padding: 0;
+      margin-left: 4px;
+      margin-right: 4px;
+      font-size: 25px;
+    }
+
+    .social-list img {
+      height: 25px;
+      width: 25px;
+    }
+
+    .social-list img:hover {
+      height: 30px;
+      width: 30px;
+    }
+  </style>
+
+
+
+  <title>hakkımda</title>
 </head>
+
 <body>
-    <h3>hakkımda kısa bilgi ...</h3>
+  <div class="container">
+    <!-- başlık -->
+    <div class="row mt-3">
+      <div class="col-sm ml-3">
+        <h5 style="font-weight:700; font-size:16px; font-family:Verdana, Geneva, Tahoma, sans-serif">y. kemal beler</h5>
+        <h6 style="font-weight:700; font-size:16px; font-family:Verdana, Geneva, Tahoma, sans-serif">acemi web dev...
+        </h6>
+        <ul class="social-list">
+          <li><a href="https://codepen.io/ykemal/" target="_blank"><img src="codepen_logo.png" alt=""></a></li>
+          <li><a href="https://www.freecodecamp.org/albatigris" target="_blank"><img src="freecodecamp_logo.png"
+                alt=""></a></li>
+          <li><a href="https://github.com/albatigris" target="_blank"><img src="github_logo.png" alt=""></a></li>
+          <li><a href="https://repl.it/@KemalBeler" target="_blank"><img src="icon-square.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="col-sm">
+
+      </div>
+
+      <!-- <div class="col-sm text-right mr-3">
+        <a style="font-weight:700; font-size:16px; color:orangered; font-family:Verdana, Geneva, Tahoma, sans-serif"
+          href="mailto:kbeler@outlook.com">kbeler@outlook.com</a>
+        <h6 style="font-weight:700; font-size:16px; font-family:Verdana, Geneva, Tahoma, sans-serif">0506 416 20 99</h6>
+      </div> -->
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <!-- kimim -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <h6
+                style="font-weight:700; font-size:16px;background-color:whitesmoke; font-family:Verdana, Geneva, Tahoma, sans-serif ">
+                hakkımda</h6>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body" style="background-color:whitesmoke">
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li>1977 doğum,</li>
+                  <li>1999 üni. mezuniyet (iktisat),</li>
+                  <li>evli, iki çocuklu,</li>
+                  <li>ingilizce ODTÜ proficiency 86,</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>2000-2016 Savunma Sanayii Müsteşarlığı,</li>
+                  <li>3 resmi ve sayısız gayriresmi takdir,</li>
+                  <li>20'den fazla proje (helikopter, uçak, gemi, elek.ve bilgi sistemleri vb.)</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>Ekim 2016 KHK ile işten çıkarılma,</li>
+                  <li>Başsavcılık "Kovuşturmaya Yer Yok" kararı verdi. </li>
+                  <li>İşe dönme talepli davam İdare Mahkemesinde devam ediyor.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- gecmis - gelecek -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="true" aria-controls="collapseThree">
+              <h6 style="font-weight:700; font-size:16px; font-family:Verdana, Geneva, Tahoma, sans-serif">dün, bugün,
+                yarın</h6>
+            </button>
+          </h2>
+        </div>
+
+
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body" style="background-color:whitesmoke">
+            <div class="row ml-3 mt-3">
+              <div class="col-md-6">
+                <ul>
+                  <li>çok kısa süre Java ve Python,</li>
+                  <li>sonrasında <b>HTML + CSS + JS</b>,</li>
+                  <li><b>youtube</b>'dan eğitim videoları,</li>
+                  <li><b>udemy eğitimleri,</b></li>
+                  <li><b>FreeCodeCamp Cirruculum,</b></li>
+                  <li>responsive Web ve Javascript <b><a href="../sertifikalar/index.html"
+                        target="_blank">sertifikalarını
+                        <img src="./diploma-icon.jpg" style="width:25px; height:25px" alt=""></a></b> aldım,</li>
+                  <li>youtube'dan, Udemy'deki eğitimlerden, github'dan ilgimi çeken uygulama/oyun <b>kodlarını
+                      kurcalayarak</b>, kimisine yeni özellikler ekleyerek/çıkararak ...</li>
+                  <li style="color:red"><b>anasayfada yer alan oyun ve uygulamalarda; bu kurcalamalar sonucu
+                      benzerlerini yapmaya çalıştıklarım, değiştirdiklerim, değiştireceklerim, üzerinde çalışacaklarım, vb...</b></li>
+                  <li style="color:blue; font-weight: 800;  letter-spacing: 2px">kısaca öğrenmeye çalışıyorum</li>
+                </ul>
+
+
+              </div>
+
+              <div class="col-md-6">
+                <ul>
+                  <li><b><a href="https://learn.freecodecamp.org/" target="_blank"> <img src="./fcc.png" alt=""
+                          style="width:auto; height:22px"> Cirruculum</a> </b>'u tamamlamak,</li>
+                  <li><b>front end --> back end </b>geliştirici,</li>
+                  <li><b>Progressive Web Uygulamaları,</b></li>
+                  <li><b>mobile</b> geliştirici,</li>
+                  <li><b>dizayn/illustrasyon</b> konularında bilgi,</li>
+                  <li style="color:blue; font-weight: 800;  letter-spacing: 2px"><b>kısaca fikirlerimi
+                      gerçekleştirecek bilgi/beceriye ulaşmak</b></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- beceriler -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo">
+              <h6 style="font-weight:700; font-size:16px; font-family:Verdana, Geneva, Tahoma, sans-serif">ilerlemelerim
+              </h6>
+
+          </h2>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
+
+          <div class="card-body" style="background-color:whitesmoke">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="progress mt-2 mr-2" style="height:30px">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%; font-size: 1.3em"
+                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><b
+                      style="font-weight:700; font-size:16px">FRONT END DEVELOPMENT</b>
+                  </div>
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 30%" aria-valuenow="30"
+                    aria-valuemin="0" aria-valuemax="100"><b style="font-weight:700; font-size:16px">70%</b>
+                  </div>
+                </div>
+                <div class="progress ml-5 mt-2 mr-5" style="height:25px">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 85%; font-size: 1.1em"
+                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><b
+                      style="font-weight:700; font-size:14px">Responsive Web Design</b>
+                  </div>
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 15%" aria-valuenow="15"
+                    aria-valuemin="0" aria-valuemax="100"><b style="font-weight:700; font-size:14px">85%</b>
+                  </div>
+                </div>
+                <div class="progress  ml-5 mt-2 mr-5" style="height:25px">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 75%; font-size: 1.1em"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b font-weight:700;
+                      font-size:14px">Javascript Algorithms And Data
+                      Structures</b>
+                  </div>
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"><b style="font-weight:700; font-size:14px">75%</b>
+                  </div>
+                </div>
+                <div class="progress ml-5 mt-2 mr-5" style="height:25px">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 50%; font-size: 1.1em"
+                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><b
+                      style="font-weight:700; font-size:14px">Front End Libraries</b></div>
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100"><b style="font-weight:700; font-size:14px">50%</b>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="progress mt-2 mr-2" style="height:30px">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 5%;" aria-valuenow="5"
+                    aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 95%; font-size: 1.3em"
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><b>BACK END DEVELOPMENT</b>
+                  </div>
+                </div>
+                <div class="progress ml-5 mt-2 mr-5" style="height:25px">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 5%;" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;  font-size: 1.1em"
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><b>Data Visualization</b></div>
+                </div>
+                <div class="progress ml-5 mt-2 mr-5" style="height:25px">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 5%;" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;  font-size: 1.1em"
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><b>Apis And Microservices</b></div>
+                </div>
+                <div class="progress ml-5 mt-2 mr-5" style="height:25px">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 5%;" aria-valuenow="0"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 95%;  font-size: 1.1em"
+                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><b>Information Security And Quality
+                      Assurance</b></div>
+                </div>
+                <div class="progress mt-2 mr-2" style="height:30px">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 10%;" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"><b style="font-weight:700; font-size:16px; color:black">5%</b>
+                  </div>
+                  <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;  font-size: 1.3em"
+                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><b>ILLUSTRATION SKILLS</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- linkler -->
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour">
+                <h6 style="font-weight:700; font-size:16px; font-family:Verdana, Geneva, Tahoma, sans-serif">kaynaklarım
+                </h6>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+
+            <div class="card-body" style="background-color:whitesmoke">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <li style="color:red; font-weight:700"> youtube kanalları</li>
+                    <li><a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ"
+                        target="_blank">freeCodeCamp.org</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w" target="_blank">Academind</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC9Z-Gc_BkYuW75jKcTJICJA" target="_blank">Selman
+                        Kahya</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank">Travesy
+                        Media</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/user/learncodeacademy/videos"
+                        target="_blank">LearnCode.academy</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCBdyRvz9ixmNWHwj4cCiuHA"
+                        target="_blank">fehmiuyarnet</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog/featured"
+                        target="_blank">Online
+                        Tutorials</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCzVB3qcyTd-QGJKY_Hpky5g" target="_blank">Arin
+                        Yazilim</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCiziEYDqww4rn3wn7otqHQQ" target="_blank">Yalin Kod</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCX4mqbvv5lGqLpI4FYlJt4w" target="_blank">Gigantic</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCZNZj3mkdCGJfCoKyl4bSYQ" target="_blank">Yazılım
+                        Bilimi</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC5Wi_NYysX-LfcqT3Hq9Faw" target="_blank">Dylan
+                        Israel</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC8n8ftV94ZU_DJLOLtrpORA" target="_blank">Code
+                        Explained</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC1Z-a8i2Ce4oIEMV-S3iFrg" target="_blank">Adem
+                        İlter</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA" target="_blank">Programming
+                        with
+                        Mosh</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A" target="_blank">CS Dojo</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q" target="_blank">Fun Fun
+                        Function</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC8A0M0eDttdB11MHxX58vXQ" target="_blank">Meth Meth
+                        Method</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCHFmShpjG-8N52O0JD2ut3A/featured" target="_blank">Code
+                        Sketch</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCshZ3rdoCLjDYuTR_RBubzw" target="_blank">JProgram With
+                        Erik</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC-91UA-Xy2Cvb98deRXuggA" target="_blank">Joshua
+                        Fluke</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCP9f66_seWF-7nYMFOSQWOQ" target="_blank">Volkan
+                        Şengül</a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UC4I7mk5atVNtFDNI1c8yOWA" target="_blank">Tarık
+                        Guney</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li style="color:red; font-weight:700">udemy eğitimleri</li>
+                    <li><a href="https://www.udemy.com/komple-web-developer-kursu/" target="_blank">Komple Uygulamalı
+                        Web Geliştirme Eğitimi </a></li>
+                    <li><a href="https://www.udemy.com/the-web-developer-bootcamp/" target="_blank">The Web Developer
+                        Bootcamp </a></li>
+                    <li><a href="https://www.udemy.com/javascript-essentials/" target="_blank">Javascript Essentials
+                      </a></li>
+                    <li><a href="https://www.udemy.com/react-the-complete-guide-incl-redux/" target="_blank">React - The
+                        Complete Guide (incl Hooks, React Router, Redux) </a></li>
+                    <li><a href="https://www.udemy.com/the-advanced-web-developer-bootcamp/" target="_blank">The
+                        Advanced Web Developer Bootcamp </a></li>
+                    <li><a href="https://www.udemy.com/adobe-illustrator-egitimi/" target="_blank">Adobe Illustrator CC
+                        2019: En Temelden İleri Seviyeye </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- experience 
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                experience
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid" src="experience.png" width="225" height="auto" alt="">
+                </div>              
+            </div>
+          </div>
+        </div>
+        -->
+        <!-- education 
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                education
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="row">
+                <div class="col-3">
+                    <img class="img-fluid" src="education-11.jpg" width="225" height="auto" alt="">
+                </div>
+                <div class="col-3">
+                    <div class="card-body">
+                    <p>yahya kemal beler</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-body">
+                    <p>yahya kemal beler</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card-body">
+                    <p>yahya kemal beler</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    -->
+
+        <!-- iletişim -->
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0 text-center">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
+                aria-expanded="true" aria-controls="collapseFive">
+                <h6
+                  style="color:orangered; font-weight:700; font-size:16px;background-color:whitesmoke; font-family:Verdana, Geneva, Tahoma, sans-serif">
+                  iletişim</h6>
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body" style="background-color:whitesmoke; ">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <ul>
+                    <li><i class="fas fa-phone"> 0506 416 20 99</i></li>
+                    <li><a href="mailto:kbeler@outlook.com"><i class="fas fa-envelope"> kbeler@outlook.com</i></a></li>
+                    <li><i class="fas fa-home"> Ankara</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+      </script>
+      <script>
+        $('.collapse').collapse()
+      </script>
+
 </body>
+
 </html>
