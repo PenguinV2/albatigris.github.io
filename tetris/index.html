@@ -1,27 +1,25 @@
-<html>
+<html lang="en">
 <head>
-    <title>Tetris Game JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kemal Tetris</title>
     <style>
-        #score{
+        #score {
             display: inline-block;
         }
-        div{
+
+        div {
             font-size: 25px;
             font-weight: bold;
             font-family: monospace;
-            text-align: center;
-        }
-        canvas{
-            display: block;
-            margin:0 auto;
         }
     </style>
 </head>
 <body>
-   <div>This Game Was Created By <a target="_blank" href="https://www.youtube.com/c/codeexplained">Code Explained</a></div><br>
-    <canvas id="tetris" width="200" height="400"></canvas>
+    <canvas id="tetris" width="300" height="600"></canvas>
     <div>
-        Score : <div id="score">0</div>
+        score : <div id="score">0</div>
     </div>
     <script src="tetrominoes.js"></script>
     <script src="tetris.js"></script>
